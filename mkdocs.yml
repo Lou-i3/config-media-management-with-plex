@@ -59,6 +59,12 @@ plugins:
       enable_creation_date: true
       fallback_to_build_date: true
 
+nav:
+  - Config Media Management With Plex:
+    - index.md
+    - Servarr Containers: servarr-containers.md
+  - Tags: tags.md
+
   
 repo_url: https://github.com/Lou-i3/config-media-management-with-plex
 repo_name: Lou-i3/config-media-management-with-plex
