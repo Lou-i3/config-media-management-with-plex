@@ -6,7 +6,7 @@ theme:
   font:
     text: Nunito
     code: Cutive Mono
-  custom_dir: overrides
+  # custom_dir: overrides
   features:
     - navigation.tabs
     - navigation.tracking # auto update anchor tag in url from scroll 
