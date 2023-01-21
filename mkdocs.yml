@@ -1,0 +1,93 @@
+site_name: Config Media Management With Plex
+theme:
+  name: material
+  language: en
+  favicon: /images/favicon.svg
+  font:
+    text: Nunito
+    code: Cutive Mono
+  custom_dir: overrides
+  features:
+    - navigation.tabs
+    - navigation.tracking # auto update anchor tag in url from scroll 
+    - navigation.top # back to top button
+    - navigation.instant # no reloading
+    - navigation.sections # Left sidebar bold sections instead of dropdown 
+    - navigation.indexes
+    - navigation.expand # auto expand navigation
+    - header.autohide
+    - content.code.copy # allow code copy
+    - search.highlight # highlight searched word once page clicked 
+    - search.share # allow sharing of search
+    - search.suggest # suggest words (tab to complete)
+    - content.action.edit # Show edit button on pages 
+    - content.action.view # Show view button on pages 
+
+  # icon:
+  #   edit: material/pencil 
+  #   view: material/eye
+
+  palette:
+
+    # # Palette toggle for light mode
+    # - media: "(prefers-color-scheme: light)"
+    #   scheme: default 
+    #   toggle:
+    #     icon: material/brightness-7
+    #     name: Switch to light mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: deep-purple
+      accent: purple
+      toggle:
+        icon: material/spa
+        name: Switch to dark mode purple
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: teal
+      accent: light-green
+      toggle:
+        icon: material/star
+        name: Switch to dark mode blue
+plugins:
+  - search
+  - tags:
+      tags_file: tags.md
+  - git-revision-date-localized:
+      enable_creation_date: true
+      fallback_to_build_date: true
+
+  
+repo_url: https://github.com/Lou-i3/config-media-management-with-plex
+repo_name: Lou-i3/config-media-management-with-plex
+edit_uri: blob/main/docs/
+extra:
+  homepage: https://Lou-i3.github.io/config-media-management-with-plex/
+
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - smarty
+  - meta
+  - toc:
+      permalink: True
+  # - markdown_include.include:
+  #     base_path: docs
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+extra_css:
+  - stylesheets/extra.css
