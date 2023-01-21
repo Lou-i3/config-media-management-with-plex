@@ -2,7 +2,7 @@ site_name: Config Media Management With Plex
 theme:
   name: material
   language: en
-  favicon: /images/favicon.svg
+  favicon: /images/favicon.png
   font:
     text: Nunito
     code: Cutive Mono
