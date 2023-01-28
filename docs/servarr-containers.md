@@ -42,14 +42,14 @@ services:
 ```
 
 1.  :man_raising_hand: Enter here the name of the image you need  
-    Find bellow the different available images!  
+    Find [bellow](#docker-images-volume-mappings) the different available images!  
 2.  :material-rename-outline: Enter here the name you want for your container   
     :warning: No spaces!  
 3.  :material-access-point-network: Enter the port mappings  
     **On the left** the port your container will have on your server   
     **On the right** the port the app inside the container is using     
 4.  :material-server: Here are examples of volumes mappings  
-    Find bellow which volume are needed for your image!  
+    Find [bellow](#docker-images-volume-mappings) which volume are needed for your image!  
 5.  :fontawesome-solid-user: You need to map user credentials with your account   
     In ssh console type in `id` and get the values for **PUID** and **GUID**  
 
