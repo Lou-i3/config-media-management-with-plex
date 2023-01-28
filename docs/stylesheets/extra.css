@@ -4,6 +4,11 @@
     --color-warning: #eaed5b;
 }
 
+:root {
+    --md-primary-fg-color:        #BC9302;
+    --md-primary-fg-color--light: #ECB7B7;
+    --md-primary-fg-color--dark:  #90030C;
+  }
 
 [dir=ltr] .md-typeset blockquote {
     border-left: 0;

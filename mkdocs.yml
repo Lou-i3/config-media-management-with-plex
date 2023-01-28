@@ -8,7 +8,7 @@ theme:
     code: Cutive Mono
   # custom_dir: overrides
   features:
-    - navigation.tabs
+    # - navigation.tabs
     - navigation.tracking # auto update anchor tag in url from scroll 
     - navigation.top # back to top button
     - navigation.instant # no reloading
@@ -22,12 +22,14 @@ theme:
     - search.suggest # suggest words (tab to complete)
     - content.action.edit # Show edit button on pages 
     - content.action.view # Show view button on pages 
-
+    - content.code.copy # Allow code copying 
+    - content.code.annotate # Allow code anotation with "+" within codeblock 
   # icon:
   #   edit: material/pencil 
   #   view: material/eye
 
   palette:
+    scheme: slate
 
     # # Palette toggle for light mode
     # - media: "(prefers-color-scheme: light)"
@@ -37,20 +39,20 @@ theme:
     #     name: Switch to light mode
 
     # Palette toggle for dark mode
-    - scheme: slate
-      primary: deep-purple
-      accent: purple
-      toggle:
-        icon: material/spa
-        name: Switch to dark mode purple
+    # - scheme: slate
+    #   # primary: '#BC9302'
+    #   accent: purple
+    #   toggle:
+    #     icon: material/spa
+    #     name: Switch to dark mode purple
 
     # Palette toggle for dark mode
-    - scheme: slate
-      primary: teal
-      accent: light-green
-      toggle:
-        icon: material/star
-        name: Switch to dark mode blue
+    # - scheme: slate
+    #   primary: teal
+    #   accent: light-green
+    #   toggle:
+    #     icon: material/star
+    #     name: Switch to dark mode blue
 plugins:
   - search
   - tags:
@@ -60,9 +62,13 @@ plugins:
       fallback_to_build_date: true
 
 nav:
-  - Config Media Management With Plex:
+  - Home:
     - index.md
-    - Servarr Containers: servarr-containers.md
+    - general-presentation.md
+    - use-docker-compose.md
+    - servarr-containers.md
+    - transmission.md
+  - Roadmap: roadmap.md
   - Tags: tags.md
 
   
